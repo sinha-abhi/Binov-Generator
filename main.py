@@ -10,4 +10,4 @@ url = base_url + "key=" + api_key + "&number=" + number
 r= requests.get(url)
 response = r.json()
 
-print (response + "binov")
+print(response[0] + "binov")
