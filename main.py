@@ -1,11 +1,13 @@
 import json
+import requests
 
-base_url=https://random-word-api.herokuapp.com/word?
-api_key=D10Q0E04
-number=1
+base_url="https://random-word-api.herokuapp.com/word?"
+api_key="D10Q0E04"
+number="1"
 
-url = base_url + "key=" + api_key + "number=" + number
-print url + ("binov")
+url = base_url + "key=" + api_key + "&number=" + number
 
 r= requests.get(url)
-response = r.json
+response = r.json()
+
+print (response + "binov")
